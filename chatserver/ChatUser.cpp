@@ -11,5 +11,13 @@ ChatUser::~ChatUser(){
 }
 
 char* ChatUser::getIP(){
-	
+	return inet_ntoa(this->clnt_addr.sin_addr);	
+}
+
+int ChatUser::getSocket(){
+	return this->clnt_sock;
+}
+void run(){
+
+
 }

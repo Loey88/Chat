@@ -7,8 +7,5 @@ void* ChatThread::threadstart(void* arg){
 
 void ChatThread::start(){
 	pthread_create(&t_id, NULL, &ChatThread::threadstart, this);
-}
-
-void ChatThread::wait(){
-	pthread_join(t_id, NULL);
+	pthread_detach(t_id);
 }

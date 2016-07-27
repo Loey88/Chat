@@ -5,7 +5,7 @@ const int ChatApp::MAXUSER = 5;
 pthread_mutex_t ChatApp::mutx = PTHREAD_MUTEX_INITIALIZER;
 
 void ChatApp::printNewUser(const User* user){
-
+	cout << "connected Client IP
 }
 
 void ChatApp::printExceedUser(const User* user){

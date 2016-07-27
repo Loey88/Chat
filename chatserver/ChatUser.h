@@ -21,7 +21,7 @@ class ChatUser : public ChatThread{
 	private:
 		int clnt_sock;
 		struct sockaddr_in clnt_addr;
-		string IP;
+	
 	public:
 		ChatUser(int cs, sockaddr_in ca);
 		ChatUser(const User &user) {}
@@ -30,13 +30,6 @@ class ChatUser : public ChatThread{
 		char* getIP();
 		int getSocket();
 		void run();
-
-
 }
-
-
-
-
-
 
 #endif

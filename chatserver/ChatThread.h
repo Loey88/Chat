@@ -13,7 +13,6 @@ class ChatThread{
 	public:
 		ChatThread() : t_id(0) {}
 		void start();
-		void wait();
 };
 		
 #endif
